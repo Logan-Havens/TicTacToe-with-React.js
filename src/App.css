@@ -5,11 +5,23 @@ button {
 }
 
 .container {
-    width: 950px;
+    width: 450px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.container .tile {
+    width: calc(33.33% -16px);
 }
 
 .menu {
     text-align: center;
     width: 90%;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
 }

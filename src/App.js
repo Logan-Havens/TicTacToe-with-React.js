@@ -81,11 +81,17 @@ class App extends Component {
                     <Announcement winner={this.state.winner}/>
                     <ResetButton reset={this.resetBoard.bind(this)} /> 
                 </div>
-                {this.state.gameBoard.map((value, i) => (
-    <Tile key={i} loc={i} value={value} updateBoard={this.updateBoard.bind(this)} turn={this.state.turn} />
-))}
-
-                
+                <div className="board"> {this.state.gameBoard.map((value, i) => (
+                    <Tile 
+                            key={i} 
+                            loc={i} 
+                            value={value} 
+                            updateBoard={this.updateBoard.bind(this)} 
+                            turn={this.state.turn}
+                            winner={this.state.winner} 
+                        />
+                    ))}
+                </div> 
             </div>
         )
     }

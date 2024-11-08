@@ -7,10 +7,13 @@
     display: inline-block;
     text-align: center;
     line-height: 150px;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
 }
 
 p {
-    marigin: 0;
+    margin: 0;
     padding: 0;
 }
