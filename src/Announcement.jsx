@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import './Announcement.css';
 
 export default class Announcement extends Component{
     render() {
         return(
-            <div className="visable">
+            <div className={this.props.winner ? 'visable' : 'hidden'}>
                 <h2>Game Over</h2>
             </div>
         )
