@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Announcement from './Announcement';
 import ResetButton from './ResetButton';
 import Tile from './Tile'; 
+import './App.css';
+
 
 class App extends Component {
     constructor() {

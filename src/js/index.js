@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
+import './index.css';
 
 // import your main App component
 import App from "../App"; // Assuming App.js is in src directory
